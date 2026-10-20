@@ -23,7 +23,7 @@ public class MainView extends VerticalLayout {
         this.addNewBtn = new Button("Add new customer");
 
         // Настройка поля поиска
-        filter.setPlaceholder("Filter by last name");
+        filter.setPlaceholder("Filter customers by  name");
         filter.setValueChangeMode(ValueChangeMode.EAGER);
         filter.addValueChangeListener(e -> listCustomers(e.getValue()));
 
